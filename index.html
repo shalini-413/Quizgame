@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Quiz Form</title>
+</head>
+
+<body>
+    <div class="box">
+        <h1 class="heading">Interactive Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <h3>Question 1:</h3>
+                <p>What is the capital of France?</p>
+                <div class="answers">
+                    <label>
+                        <input type="radio" name="q1" value="a" onclick="playSound('clickSound')"> a) Paris
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b" onclick="playSound('clickSound')"> b) Rome
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c" onclick="playSound('clickSound')"> c) Madrid
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>Question 2:</h3>
+                <p>Which programming language is used for web development?</p>
+                <div class="answers">
+                    <label>
+                        <input type="radio" name="q2" value="a" onclick="playSound('clickSound')"> a) Java
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b" onclick="playSound('clickSound')"> b)  HTML
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c" onclick="playSound('clickSound')"> c) Python
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>Question 3:</h3>
+                <p>What does CSS stand for?</p>
+                <div class="answers">
+                    <label>
+                        <input type="radio" name="q3" value="a" onclick="playSound('clickSound')"> a) Cascading Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b" onclick="playSound('clickSound')"> b) Computer Style Sheets
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c" onclick="playSound('clickSound')"> c) Creative Style Sheets
+                    </label>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="btn" onclick="playSound('submitSound')">
+            </div>
+
+        </form>
+    </div>
+    <p class="copy">@ Copyright By Shalini</p>
+    <div id="feedback" class="feedback">
+
+    </div>
+
+    <!-- Audio elements for sound effects -->
+    <audio id="clickSound">
+        <source src="radio_sound.wav">
+    </audio>
+    <audio id="submitSound">
+        <source src="submitsound.wav" type="audio/mpeg">
+    </audio>
+
+    
+    <script src="myscripts.js"></script>
+</body>
+
+</html>
